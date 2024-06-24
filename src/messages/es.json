@@ -1,0 +1,15 @@
+{
+  "HeaderBrandAuth": {
+    "title": "Agenda tu corte",
+    "image": "/images/logo.png",
+    "imageLogo": {
+      "src": "",
+      "alt": ""
+    },
+    "alt": "Agenda tu corte"
+  },
+  "LoginPage": {
+    "title": "Inicia sesión o crea tu cuenta",
+    "subtitle": "Accede a tu cuenta o registrate sin costo y podrás acceder a increíbles beneficios."
+  }
+}
