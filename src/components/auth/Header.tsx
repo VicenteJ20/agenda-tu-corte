@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HeaderAuth = () => {
   return (
-    <header className='p-6 fixed top-0 left-0 right-0 bg-white'>
+    <header className='p-6 bg-white'>
       {
         msj.HeaderBrandAuth.imageLogo && msj.HeaderBrandAuth.imageLogo.src.length > 0 ?
           <Image

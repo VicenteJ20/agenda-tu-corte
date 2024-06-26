@@ -3,7 +3,7 @@ import { HeaderText } from "@/components/auth/HeaderText";
 
 const LoginPage = () => {
   return (
-    <section className='max-w-[32rem] bg-white lg:border border-zinc-200 rounded-lg px-8 md:p-6 lg:shadow-lg '>
+    <section className=''>
       <HeaderText
         title='Inicia sesión o crea tu cuenta'
         description='Accede a tu cuenta o registrate sin costo y podrás acceder a increúbles beneficios.'
