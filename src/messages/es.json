@@ -11,5 +11,10 @@
   "LoginPage": {
     "title": "Inicia sesión o crea tu cuenta",
     "subtitle": "Accede a tu cuenta o registrate sin costo y podrás acceder a increíbles beneficios."
-  }
+  },
+  "SignupPage": {
+    "title": "Regístrate",
+    "subtitle": "Crea tu cuenta sin costo y podrás acceder a increíbles beneficios."
+  },
+  "FooterBrand": "Copyright 2024, Agenda tu corte. Todos los derechos reservados."
 }
