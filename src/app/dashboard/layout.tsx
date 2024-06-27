@@ -11,9 +11,11 @@ export default async function DashboardLayout({
   const session = await auth()
   return (
     <SessionProvider session={session}>
-      <main className=''>
+      <main className='flex flex-row'>
         <DashboardNavbar />
-        {children}
+        <section className='p-6'>
+          {children}
+        </section>
       </main>
     </SessionProvider>
   );
