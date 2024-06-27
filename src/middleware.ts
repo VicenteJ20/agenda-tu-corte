@@ -10,7 +10,7 @@ export default auth((req) => {
      return NextResponse.redirect(`${origin}/auth/login`)
    }
 
-   return NextResponse.redirect(`${origin}/`)
+   return NextResponse.next()
  });
  
  export const config = {
