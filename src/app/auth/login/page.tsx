@@ -1,14 +1,15 @@
 import { SignInBtns } from "@/components/SignInBtns";
 import { HeaderText } from "@/components/auth/HeaderText";
+import msg from '@/messages/es.json'
 
 const LoginPage = () => {
   return (
-    <section className=''>
+    <section className='px-12'>
       <HeaderText
-        title='Inicia sesión o crea tu cuenta'
-        description='Accede a tu cuenta o registrate sin costo y podrás acceder a increúbles beneficios.'
+        title={msg.LoginPage.title}
+        description={msg.LoginPage.subtitle}
       />
-      <SignInBtns />
+      <SignInBtns page='login' />
     </section>
   )
 }

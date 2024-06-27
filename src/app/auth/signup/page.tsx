@@ -1,8 +1,16 @@
+import { HeaderText } from "@/components/auth/HeaderText";
+import { SignInBtns } from "@/components/SignInBtns";
+import msg from '@/messages/es.json'
+
 const SignUpPage = () => {
   return (
-    <div>
-      <h1 className='text-4xl font-bold text-red-400'>REGISTRO</h1>
-    </div>
+    <section className='px-12'>
+      <HeaderText
+        title={msg.SignupPage.title}
+        description={msg.SignupPage.subtitle}
+      />
+      <SignInBtns page='register' />
+    </section>
   )
 }
 
