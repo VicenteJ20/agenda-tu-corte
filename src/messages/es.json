@@ -26,22 +26,22 @@
       {
         "text": "Colaboradores",
         "active": false,
-        "href": "/colaboradores"
+        "href": "/dashboard/colaboradores"
       },
       {
         "text": "Clientes",
         "active": false,
-        "href": "/clientes"
+        "href": "/dashboard/clientes"
       },
       {
         "text": "Reservaciones",
         "active": false,
-        "href": "/reservaciones"
+        "href": "/dashboard/reservaciones"
       },
       {
         "text": "Configuración",
         "active": false,
-        "href": "/configuracion"
+        "href": "/dashboard/configuracion"
       }
     ]
   },

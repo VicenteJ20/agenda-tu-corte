@@ -1,5 +1,6 @@
 'use client'
 import { useContext } from "react"
+import Link from "next/link"
 
 export interface SidebarItemProps {
   icon: React.ReactNode;
@@ -7,9 +8,10 @@ export interface SidebarItemProps {
   active: boolean;
   alert?: boolean;
   SidebarContext: any;
+  href: string;
 }
 
-export function SidebarItem({ icon, text, active, alert, SidebarContext }: SidebarItemProps) {
+export function SidebarItem({ icon, text, active, alert, SidebarContext, href }: SidebarItemProps) {
   const { isOpen } = useContext(SidebarContext) as any
   
   return (
@@ -26,14 +28,14 @@ export function SidebarItem({ icon, text, active, alert, SidebarContext }: Sideb
         }
     `}
     >
-      {icon}
-      <span
+      <Link href={href}>{icon}</Link>
+      <Link href={href}
         className={`overflow-hidden transition-all ${
           isOpen ? "w-52 ml-3" : "w-0"
         }`}
       >
         {text}
-      </span>
+      </Link>
       {alert && (
         <div
           className={`absolute right-2 w-2 h-2 rounded bg-lime-400 ${

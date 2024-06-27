@@ -53,6 +53,7 @@ const DashboardNavbar = () => {
                   active={item.active}
                   SidebarContext={SidebarContext}
                   icon={icons[item.text.toLowerCase()]}
+                  href={item.href}
                 />
 
               ))
