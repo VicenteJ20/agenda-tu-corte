@@ -16,5 +16,34 @@
     "title": "Regístrate",
     "subtitle": "Crea tu cuenta sin costo y podrás acceder a increíbles beneficios."
   },
+  "NavbarInfo": {
+    "links": [
+      {
+        "text": "Dashboard",
+        "active": true,
+        "href": "/dashboard"
+      },
+      {
+        "text": "Colaboradores",
+        "active": false,
+        "href": "/colaboradores"
+      },
+      {
+        "text": "Clientes",
+        "active": false,
+        "href": "/clientes"
+      },
+      {
+        "text": "Reservaciones",
+        "active": false,
+        "href": "/reservaciones"
+      },
+      {
+        "text": "Configuración",
+        "active": false,
+        "href": "/configuracion"
+      }
+    ]
+  },
   "FooterBrand": "Copyright 2024, Agenda tu corte. Todos los derechos reservados."
 }

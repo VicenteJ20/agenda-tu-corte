@@ -16,12 +16,13 @@ export function SidebarItem({ icon, text, active, alert, SidebarContext }: Sideb
     <li
       className={`
         relative flex items-center py-2 px-3 my-1
-        font-medium rounded-md cursor-pointer
+        font-normal rounded-md cursor-pointer
         transition-colors group
+        hover:text-zinc-900
         ${
           active
-            ? "bg-gradient-to-br from-lime-300 to-lime-100 text-lime-900"
-            : "hover:bg-lime-50 text-gray-600"
+            ? "bg-gradient-to-br from-lime-300 to-lime-100 text-zinc-900"
+            : "hover:bg-lime-100 text-zinc-200"
         }
     `}
     >
