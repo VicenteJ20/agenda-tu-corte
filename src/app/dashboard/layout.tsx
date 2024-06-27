@@ -1,5 +1,6 @@
 import { auth } from "@/auth";
 import { SessionProvider } from "next-auth/react";
+import { DashboardNavbar } from "@/components/dashboard/Navbar";
 
 
 export default async function DashboardLayout({
@@ -10,7 +11,8 @@ export default async function DashboardLayout({
   const session = await auth()
   return (
     <SessionProvider session={session}>
-      <main>
+      <main className=''>
+        <DashboardNavbar />
         {children}
       </main>
     </SessionProvider>
