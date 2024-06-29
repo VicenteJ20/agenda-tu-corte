@@ -12,8 +12,8 @@ export interface SidebarItemProps {
 }
 
 export function SidebarItem({ icon, text, active, alert, SidebarContext, href }: SidebarItemProps) {
-  const { isOpen } = useContext(SidebarContext) as any
-  
+  const { isOpen, setSelected, selected } = useContext(SidebarContext) as any
+
   return (
     <li
       className={`
@@ -21,26 +21,24 @@ export function SidebarItem({ icon, text, active, alert, SidebarContext, href }:
         font-normal rounded-md cursor-pointer
         transition-colors group
         hover:text-zinc-900
-        ${
-          active
-            ? "bg-lime-200 text-zinc-900"
-            : "hover:bg-lime-50 text-zinc-200"
+        ${active && !selected
+          ? "bg-lime-300 text-zinc-900"
+          : selected === text ? "bg-lime-300 text-zinc-900" : "text-zinc-200 hover:bg-lime-100"
         }
     `}
+      onClick={() => setSelected(text)}
     >
       <Link href={href} className='py-2 pl-3'>{icon}</Link>
       <Link href={href}
-        className={`overflow-hidden transition-all ${
-          isOpen ? "w-52 ml-3" : "w-0"
-        }`}
+        className={`overflow-hidden transition-all ${isOpen ? "w-52 ml-3" : "w-0"
+          }`}
       >
         {text}
       </Link>
       {alert && (
         <div
-          className={`absolute right-2 w-2 h-2 rounded bg-lime-400 ${
-            isOpen ? "" : "top-2"
-          }`}
+          className={`absolute right-2 w-2 h-2 rounded bg-lime-400 ${isOpen ? "" : "top-2"
+            }`}
         />
       )}
 
@@ -48,9 +46,9 @@ export function SidebarItem({ icon, text, active, alert, SidebarContext, href }:
         <div
           className={`
           absolute left-full rounded-md px-2 py-1 ml-6
-          bg-zinc-100 text-zinc-800 text-sm
+          bg-lime-300 text-lime-900 text-sm border border-lime-500 font-medium
           invisible opacity-20 -translate-x-3 transition-all
-          group-hover:visible group-hover:opacity-100 group-hover:translate-x-0
+          group-hover:visible group-hover:opacity-100 group-hover:translate-x-0 z-30
       `}
         >
           {text}
