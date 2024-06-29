@@ -11,9 +11,9 @@ export default async function DashboardLayout({
   const session = await auth()
   return (
     <SessionProvider session={session}>
-      <main className='flex flex-row'>
+      <main className='flex flex-row bg-zinc-100'>
         <DashboardNavbar />
-        <section className='p-6'>
+        <section className='p-6 w-full transitions-all duration-300 ease-in-out'>
           {children}
         </section>
       </main>
