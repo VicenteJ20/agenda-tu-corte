@@ -17,18 +17,18 @@ export function SidebarItem({ icon, text, active, alert, SidebarContext, href }:
   return (
     <li
       className={`
-        relative flex items-center py-2 px-3 my-1
+        relative flex items-center  my-4
         font-normal rounded-md cursor-pointer
         transition-colors group
         hover:text-zinc-900
         ${
           active
-            ? "bg-gradient-to-br from-lime-300 to-lime-100 text-zinc-900"
-            : "hover:bg-lime-100 text-zinc-200"
+            ? "bg-lime-200 text-zinc-900"
+            : "hover:bg-lime-50 text-zinc-200"
         }
     `}
     >
-      <Link href={href}>{icon}</Link>
+      <Link href={href} className='py-2 pl-3'>{icon}</Link>
       <Link href={href}
         className={`overflow-hidden transition-all ${
           isOpen ? "w-52 ml-3" : "w-0"
