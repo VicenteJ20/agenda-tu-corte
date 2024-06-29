@@ -15,7 +15,7 @@ export default async function DashboardLayout({
         <DashboardNavbar />
         <section className='w-full transitions-all duration-300 ease-in-out'>
           <HeaderBarTitle />
-          <section className='p-6 w-full'>
+          <section className='pl-24 p-6 w-full'>
             {children}
           </section>
         </section>
