@@ -21,6 +21,8 @@ const StatusCards = () => {
           <Card
             key={index}
             className='flex flex-col gap-3'
+            decoration='top'
+            decorationColor={card.decorationColor || 'red'}    
           >
             <p className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">{card.title}</p>
             <p className="text-3xl text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">
