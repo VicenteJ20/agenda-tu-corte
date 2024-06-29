@@ -45,5 +45,72 @@
       }
     ]
   },
+  "ExampleDashboardHome": {
+    "chartdata": [
+      {
+        "name": "Vicente Jorquera",
+        "Cortes realizados": 50
+      },
+      {
+        "name": "Juan Perez",
+        "Cortes realizados": 30
+      }, 
+      {
+        "name": "Jhon Doe",
+        "Cortes realizados": 65
+      },
+      {
+        "name": "Jane Doe",
+        "Cortes realizados": 40
+      },
+      {
+        "name": "Maria Perez",
+        "Cortes realizados": 20
+      },
+      {
+        "name": "Luis Perez",
+        "Cortes realizados": 10
+      },
+      {
+        "name": "Pedro Perez",
+        "Cortes realizados": 15
+      },
+      {
+        "name": "Carmen Perez",
+        "Cortes realizados": 25
+      },
+      {
+        "name": "Jose Perez",
+        "Cortes realizados": 50
+      }
+    ],
+    "statusCards": [
+      {
+        "title": "Ganancias de este mes",
+        "value": "1500000",
+        "location": "es-CL",
+        "currency": "CLP"
+      },
+      {
+        "title": "Clientes por la app",
+        "value": "200"
+      },
+      {
+        "title": "Ganancias estimadas totales",
+        "value": "5000000",
+        "location": "es-CL",
+        "currency": "CLP"
+      }
+    ]
+  },
+  "DashboardHomePage": {
+    "stats": {
+      "title": "Estadisticas de interés"
+    }, 
+    "graphicStats": {
+      "title": "Cortes realizados por colaborador",
+      "description": "Aquí puedes ver la cantidad de cortes realizados por cada colaborador en el presente mes de trabajo en formato de gráfico de barras."
+    }
+  },
   "FooterBrand": "Copyright 2024, Agenda tu corte. Todos los derechos reservados."
 }
