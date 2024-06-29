@@ -26,7 +26,7 @@ const DashboardNavbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [selected, setSelected] = useState(null);
   return (
-    <aside className="h-screen relative">
+    <aside className="h-screen fixed top-0 left-0 bottom-0 z-30">
       <nav className="h-full flex flex-col bg-zinc-900 border-r shadow-sm w-fit border-r-zinc-600 text-white">
         <div className="p-4 pb-2 pt-6 flex justify-between items-center">
           <section className='flex flex-row items-center justify-center'>

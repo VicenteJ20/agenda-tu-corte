@@ -22,7 +22,7 @@ const HeaderBarTitle = () => {
 
 
   return (
-    <header className='bg-white border-b border-b-zinc-200  w-full px-6 py-5 flex flex-row gap-4 items-center justify-between'>
+    <header className='bg-white border-b border-b-zinc-200  w-full pl-24 pr-6 py-5 flex flex-row gap-4 items-center justify-between'>
       <h2 className='text-xl font-semibold text-black'>{title}</h2>
       <div>
         <div
