@@ -115,5 +115,23 @@
       "description": "Aquí puedes ver la cantidad de cortes realizados por cada colaborador en el presente mes de trabajo en formato de gráfico de barras."
     }
   },
+  "NotificationsAlert": {
+    "title": "Notificaciones",
+    "description": "Aquí podrás ver tus notificaciones reciente, si las eliminas las encontrarás en las notificaciones archivadas.",
+    "notificationList": [
+      {
+        "title": "NUEVO CLIENTE",
+        "shortDesc": "Se ha registrado un nuevo cliente en el sistema"
+      },
+      {
+        "title": "NUEVA RESERVACIÓN",
+        "shortDesc": "Se ha registrado una nueva reservación en el sistema"
+      },
+      {
+        "title": "NUEVO CORTE",
+        "shortDesc": "Se ha registrado un nuevo corte en el sistema"
+      }
+    ] 
+  },
   "FooterBrand": "Copyright 2024, Agenda tu corte. Todos los derechos reservados."
 }
