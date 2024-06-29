@@ -22,7 +22,7 @@ const DashboardNavbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <aside className="h-screen relative">
-      <nav className="h-full flex flex-col bg-zinc-900 border-r shadow-sm w-fit text-white">
+      <nav className="h-full flex flex-col bg-zinc-900 border-r shadow-sm w-fit border-r-zinc-600 text-white">
         <div className="p-4 pb-2 pt-6 flex justify-between items-center">
           <section className='flex flex-row items-center justify-center'>
             <Image
@@ -33,7 +33,7 @@ const DashboardNavbar = () => {
               width={100}
               height={100}
             />
-            <h2 className={`text-lg font-semibold ${isOpen ? "ml-3" : "hidden"}`}>Agenda tu corte</h2>
+            <h2 className={`text-lg whitespace-nowrap font-semibold ${isOpen ? "ml-3" : "hidden"}`}>Agenda tu corte</h2>
           </section>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -73,7 +73,7 @@ const DashboardNavbar = () => {
           <div
             className={`
                 flex justify-between items-center
-                overflow-hidden transition-all ${isOpen ? "w-52 ml-3" : "w-0"}
+                overflow-hidden transition-all ${isOpen ? "w-52 ml-3" : "w-0"} relative
             `}
           >
             <div className="leading-4">
