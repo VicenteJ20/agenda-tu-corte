@@ -7,7 +7,11 @@ import { useSession } from "next-auth/react"
 import { SidebarItem } from "./SideBarItem"
 import ni from '@/messages/es.json'
 
-const SidebarContext = createContext({ isOpen: false })
+const SidebarContext = createContext({
+  isOpen: false,
+  selected: null as any,
+  setSelected: (): any => {}
+}) as any
 
 const icons = {
   'dashboard': <RiArchive2Line size={20} />,
@@ -20,6 +24,7 @@ const icons = {
 const DashboardNavbar = () => {
   const session = useSession()
   const [isOpen, setIsOpen] = useState(false)
+  const [selected, setSelected] = useState(null);
   return (
     <aside className="h-screen relative">
       <nav className="h-full flex flex-col bg-zinc-900 border-r shadow-sm w-fit border-r-zinc-600 text-white">
@@ -43,7 +48,7 @@ const DashboardNavbar = () => {
           </button>
         </div>
 
-        <SidebarContext.Provider value={{ isOpen }}>
+        <SidebarContext.Provider value={{ isOpen, selected, setSelected }}>
           <ul className="flex-1 px-3 pt-4">
             {
               ni.NavbarInfo && ni.NavbarInfo.links.map((item, index: number) => (
